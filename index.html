@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,20 +23,20 @@ body{
     line-height:1.8;
 }
 
-/* 导航栏 */
+/* Navigation Bar */
 
 nav{
     position:sticky;
     top:0;
     background:white;
-    padding:15px;
     text-align:center;
-    z-index:999;
+    padding:15px;
     box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    z-index:999;
 }
 
 nav a{
-    margin:0 20px;
+    margin:0 15px;
     text-decoration:none;
     color:#111827;
     font-weight:bold;
@@ -45,7 +46,7 @@ nav a:hover{
     color:#2563eb;
 }
 
-/* 顶部 */
+/* Header */
 
 header{
     background:#111827;
@@ -55,7 +56,7 @@ header{
 }
 
 header h1{
-    font-size:clamp(30px,5vw,56px);
+    font-size:clamp(32px,5vw,56px);
     margin-bottom:15px;
 }
 
@@ -66,12 +67,11 @@ header p{
     opacity:0.9;
 }
 
-/* 内容区 */
+/* Sections */
 
 section{
     max-width:1000px;
-    margin:auto;
-    margin-top:40px;
+    margin:40px auto;
     padding:50px 30px;
     background:white;
     border-radius:15px;
@@ -89,45 +89,44 @@ section.show{
 
 h2{
     color:#111827;
-    margin-bottom:20px;
     border-left:5px solid #2563eb;
     padding-left:12px;
+    margin-bottom:20px;
 }
 
 ul{
-    padding-left:20px;
+    padding-left:25px;
 }
 
 li{
     margin-bottom:10px;
 }
 
-/* 页脚 */
+/* Footer */
 
 footer{
-    margin-top:40px;
-    text-align:center;
-    padding:40px;
     background:#111827;
     color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:40px;
 }
 
-/* 回到顶部按钮 */
+/* Back To Top */
 
 #topBtn{
     position:fixed;
     bottom:20px;
     right:20px;
-    border:none;
-    border-radius:50%;
     width:50px;
     height:50px;
-    font-size:20px;
+    border:none;
+    border-radius:50%;
     cursor:pointer;
-    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    font-size:20px;
 }
 
-/* 手机端 */
+/* Mobile */
 
 @media (max-width:768px){
 
@@ -141,97 +140,77 @@ footer{
     }
 
     section{
+        margin:20px;
         padding:30px 20px;
-        margin-top:25px;
     }
 
 }
 
 </style>
-
 </head>
 
 <body>
 
 <nav>
-
-<a href="#background">Background</a>
-
-<a href="#data">Data</a>
-
-<a href="#dashboard">Dashboard</a>
-
-<a href="#events">Events</a>
-
-<a href="#conclusion">Conclusion</a>
-
+    <a href="#background">Background</a>
+    <a href="#data">Data</a>
+    <a href="#events">Events</a>
+    <a href="#conclusion">Conclusion</a>
 </nav>
 
 <header>
 
-<h1>AI Twitter Sentiment Dashboard</h1>
+    <h1>AI Twitter Sentiment Dashboard</h1>
 
-<p>
-A One-Year Analysis of Public Reactions to Artificial Intelligence
-</p>
+    <p>
+        A One-Year Analysis of Public Reactions to Artificial Intelligence
+    </p>
 
 </header>
 
 <section id="background">
 
-<h2>Project Background</h2>
+    <h2>Project Background</h2>
 
-<p>
-Artificial Intelligence (AI) became one of the most influential and widely discussed technologies in 2023. Major developments such as the release of GPT-4, Llama 2, and other generative AI tools attracted unprecedented public attention and sparked extensive discussions across social media platforms.
-</p>
+    <p>
+        Artificial Intelligence (AI) became one of the most influential and widely discussed technologies in 2023. Major developments such as GPT-4, Llama 2, and other generative AI tools attracted unprecedented public attention and sparked extensive discussions across social media platforms.
+    </p>
 
-<p>
-This project focuses on AI-related conversations on Twitter/X and examines how public interest and sentiment changed throughout the year. By analyzing daily tweet volume and sentiment scores, we aim to identify patterns in public reactions and understand how major AI events influenced online discussions.
-</p>
+    <p>
+        This project focuses on AI-related conversations on Twitter/X and examines how public interest and sentiment changed throughout the year. By analyzing daily tweet volume and sentiment scores, we aim to identify patterns in public reactions and understand how major AI events influenced online discussions.
+    </p>
 
-<p>
-Through interactive visualizations and contextual event annotations, this project demonstrates the relationship between technological developments, public attention, and emotional responses in the AI era.
-</p>
+    <p>
+        Through interactive visualizations and contextual event annotations, this project demonstrates the relationship between technological developments, public attention, and emotional responses in the AI era.
+    </p>
 
 </section>
 
 <section id="data">
 
-<h2>Data Source</h2>
+    <h2>Data Source</h2>
 
-<p>
-Dataset: Daily AI-related Twitter/X tweet counts and sentiment scores throughout 2023.
-</p>
+    <p>
+        Dataset: Daily AI-related Twitter/X tweet counts and sentiment scores throughout 2023.
+    </p>
 
-<p>
-Methods: Line Chart, Sentiment Trend Analysis, Dual-Axis Visualization and Interactive Dashboard.
-</p>
-
-</section>
-
-<section id="dashboard">
-
-<h2>Interactive Dashboard</h2>
-
-<p>
-<div class='tableauPlaceholder' id='viz1782052419560' style='position: relative'><noscript><a href='#'><img alt='AI Twitter Sentiment Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;44&#47;44_17820509899650&#47;AITwitterSentimentDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='44_17820509899650&#47;AITwitterSentimentDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;44&#47;44_17820509899650&#47;AITwitterSentimentDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-CN' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1782052419560');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='2227px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='2227px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-</p>
+    <p>
+        Methods: Line Chart, Sentiment Trend Analysis, Dual-Axis Visualization, Interactive Dashboard and Event Annotation.
+    </p>
 
 </section>
 
 <section id="events">
 
-<h2>Key Events</h2>
+    <h2>Key Events</h2>
 
-<ul>
+    <ul>
+        <li><strong>GPT-4 Released</strong> — March 14, 2023</li>
+        <li><strong>Llama 2 Released</strong> — July 18, 2023</li>
+        <li><strong>OpenAI Leadership Crisis</strong> — November 17, 2023</li>
+    </ul>
 
-<li><strong>GPT-4 Released</strong> — March 14, 2023</li>
-
-<li><strong>Llama 2 Released</strong> — July 18, 2023</li>
-
-<li><strong>OpenAI Leadership Crisis</strong> — November 17, 2023</li>
-
-</ul>
+</section>
 
 <section id="conclusion">
 
@@ -246,16 +225,15 @@ Methods: Line Chart, Sentiment Trend Analysis, Dual-Axis Visualization and Inter
     </p>
 
     <p>
-        By integrating tweet volume, sentiment analysis, and event annotations into an interactive dashboard, this project reveals the dynamic relationship between technological innovation and public perception. The findings highlight how data visualization can help transform large-scale social media data into meaningful insights and compelling stories.
+        By integrating tweet volume, sentiment analysis, and event annotations into an interactive dashboard, this project reveals the dynamic relationship between technological innovation and public perception. The findings highlight how data visualization can transform large-scale social media data into meaningful insights and compelling stories.
     </p>
 
 </section>
 
 <footer>
 
-Big Data Visualization Final Project<br>
-
-University Course Presentation
+    Big Data Visualization Final Project<br>
+    University Course Presentation
 
 </footer>
 
@@ -263,46 +241,39 @@ University Course Presentation
 
 <script>
 
-/* 滚动动画 */
+/* Scroll Animation */
 
-const sections=document.querySelectorAll('section');
+const sections = document.querySelectorAll('section');
 
-const observer=new IntersectionObserver(entries=>{
+const observer = new IntersectionObserver(entries => {
 
-entries.forEach(entry=>{
+    entries.forEach(entry => {
 
-if(entry.isIntersecting){
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
 
-entry.target.classList.add('show');
-
-}
-
-});
+    });
 
 });
 
-sections.forEach(section=>{
-
-observer.observe(section);
-
+sections.forEach(section => {
+    observer.observe(section);
 });
 
-/* 回到顶部 */
+/* Back To Top */
 
-document.getElementById("topBtn").onclick=function(){
+document.getElementById("topBtn").onclick = function(){
 
-window.scrollTo({
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
 
-top:0,
-
-behavior:"smooth"
-
-});
-
-}
+};
 
 </script>
 
 </body>
-
 </html>
+```
